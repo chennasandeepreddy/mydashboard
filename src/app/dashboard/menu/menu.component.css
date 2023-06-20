@@ -1,0 +1,7 @@
+.nav-pills li a:hover{
+  background-color: blue;
+}
+.container-fluid{
+  width: 100%;
+  position: fixed;
+}

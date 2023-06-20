@@ -1,0 +1,58 @@
+<body>
+  <div class="container-fluid">
+    <div class="row flex-nowrap">
+      <div class="bg-dark col-auto col-md-3 col-lg-2 min-vh-100 d-flex flex-column justify-content-between">
+        <div class="bg-dark">
+          <a class="d-flex text-decoration-none mt-1 align-items-center text-white">
+            <span class="fs-4 d-none d-sm-inline">Dashboard</span>
+          </a>
+          <ul class="nav nav-pills flex-column mt-4">
+            <li class="nav-item py-2 py-sm-0">
+                <a class="nav-link text-white"  routerLink=""  aria-current="page">
+                  <i class="fs-5 fa fa-house"></i><span class="fs-4 ms-2 d-none d-sm-inline">Home</span>
+                </a>
+            </li>
+          <li class="nav-item py-2 py-sm-0">
+            <a class="nav-link text-white"  routerLink="/dusers" routerLinkActive="active" aria-current="page">
+              <i class="fs-5 fa fa-users"></i><span class="fs-4 ms-2 d-none d-sm-inline">Userdetails</span>
+            </a>
+          </li>
+          <li class="nav-item py-2 py-sm-0">
+            <a class="nav-link text-white"  routerLink="/dtasks" routerLinkActive="active" aria-current="page">
+              <i class="fs-5 fa fa-table-list"></i><span class="fs-4 ms-2 d-none d-sm-inline">Taskdetails</span>
+            </a>
+          </li>
+          <li class="nav-item py-2 py-sm-0">
+            <a class="nav-link text-white"  routerLink="/dsummary" routerLinkActive="active" aria-current="page">
+              <i class="fs-5 fa fa-gauge"></i><span class="fs-4 ms-2 d-none d-sm-inline">Summary</span>
+            </a>
+          </li>
+        </ul>
+        <div class="dropdown open p-3">
+          <button class="btn border-none dropdown-toggle text-white" type="button" id="triggerid" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa fa-user"></i><span class="ms-2">Sandeep</span>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="triggerid">
+            <button class="dropdown-item" routerLink="">Setting</button>
+            <button class="dropdown-item " routerLink="">Profile</button>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="content">
+        <!-- Content goes here -->
+  <h1>Welcome to the Dashboard page</h1>
+  <p>The page contains navigations to tasks and users dashboards.</p><br>
+  <ol>
+    <li>Click here to navigate to users dashboard<button (click)="userbutton()" class="btn btn-success">Users_Dashboard</button></li><br><br>
+    <li>Click here to navigate to tasks dashboard<button (click)="taskbutton()" class="btn btn-success"> Tasks_Dashboard</button></li><br><br>
+    <li>Click to view Summary of tasks and users.<button (click)="summarybutton()" class="btn btn-success">Summary_info</button></li><br>
+  </ol>
+    <p>You can directly access the dashboards from the sidebar on the left side!</p>
+    
+</div>
+  
+    <!-- Rest of your HTML code -->
+</div>
+</div>
+</body>
