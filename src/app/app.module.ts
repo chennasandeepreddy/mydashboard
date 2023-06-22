@@ -14,6 +14,7 @@ import { UserDetailsComponent } from './dashboard/user-details/user-details.comp
 import { TaskDetailsComponent } from './dashboard/task-details/task-details.component';
 import { SummaryComponent } from './dashboard/summary/summary.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { VerificationComponent } from './verification/verification.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     MenuComponent,
     UserDetailsComponent,
     TaskDetailsComponent,
-    SummaryComponent
+    SummaryComponent,
+    VerificationComponent
   ],
   imports: [
     BrowserModule,
